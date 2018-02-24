@@ -663,7 +663,7 @@ interface GmailTools {
     add_attachment_button(attachment: GmailDomAttachment, contentHtml: string | null, customCssClas: string | null, tooltip: string, onClickFunction: Function);
 
     remove_modal_window(): void;
-    add_modal_window(title: string, content_html: string, onClickOk: Function, onClickCancel?: Function, onClickClose?: Function): void;
+    add_modal_window(title: string, content_html: string, onClickOk: Function, onClickCancel?: Function, onClickClose?: Function, shouldShowCancel: boolean): void;
     /**
      * Show/Hide compose window
      */
